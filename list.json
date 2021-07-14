@@ -1,0 +1,23 @@
+[
+    {
+        "name": "John",
+        "guests": 5,
+        "status": false
+    },
+    {
+        "name": "lee",
+        "guests": 2,
+        "status": true
+    },
+    {
+        "name": "larry",
+        "guests": 1,
+        "status": false
+    },
+    {
+        "name": "kevin",
+        "guests": 6,
+        "status": true
+    }
+
+]
