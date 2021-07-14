@@ -18,6 +18,16 @@
         "name": "kevin",
         "guests": 6,
         "status": true
+    },
+    {
+        "name": "tawny",
+        "guests": 1,
+        "status": false
+    },
+    {
+        "name": "alysha",
+        "guests": 1,
+        "status": false
     }
 
 ]
