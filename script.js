@@ -69,7 +69,7 @@ function maker() {
 function makeList(element,index) {
     const div = document.createElement('div')
     div.classList.add('box')
-    div.innerHTML = `${element.name} Number of Guests: ${element.guests}`;
+    div.innerHTML = `${element.name} - Number of Guests: ${element.guests}`;
     output.append(div)
 
     
@@ -114,6 +114,7 @@ function makeList(element,index) {
     function addToList() {
         console.log(input1.value);
         console.log(input2.value);
+        if(input1.value.length > 3){
         const myObj ={
             'name': input1.value,
             'guests': input2.value,
@@ -125,3 +126,5 @@ function makeList(element,index) {
         saveToStorage();
         makeList(myObj,val)
     }
+    input1.value = '';
+}
