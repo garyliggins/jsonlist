@@ -39,14 +39,8 @@ window.addEventListener('DOMContentLoaded', () => {
         myList = JSON.parse(localStorage.getItem('myList'))
         maker();
     } else {
-    fetch(url).then(rep => rep.json())
-    .then((data) => {
-        myList = data;
-        // console.log(data);
-       maker()
-       saveToStorage();
-    })
-}
+   reloader();
+    }
     
 })
 
@@ -71,9 +65,6 @@ function makeList(element,index) {
     div.classList.add('box')
     div.innerHTML = `${element.name} - Number of Guests: ${element.guests}`;
     output.append(div)
-
-    
-
     if(element.status){
     div.classList.add('active');}
     else  { element.status = false 
